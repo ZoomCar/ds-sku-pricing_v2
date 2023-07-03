@@ -63,6 +63,8 @@ build/
 .env_prod
 .env
 
+*.ipynb
+
 monitoring/
 
 tmp/

@@ -22,7 +22,8 @@ class SlotPriceAssigner:
             if cell.mean_demand==0:
                 cell.mean_demand=1
             percent_change_in_demand_wrt_mean_demand = (float(cell.demand) - float(cell.mean_demand))/float(cell.mean_demand)
-            cell.dpm = avg_dpm*(1+percent_change_in_demand_wrt_mean_demand)
+            cell.dpm = avg_dpm
+            # avg_dpm*(1+percent_change_in_demand_wrt_mean_demand)
         
         if cell.dpm > cell.max_dpm:
             cell.dpm=cell.max_dpm
