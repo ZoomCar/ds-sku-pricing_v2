@@ -1,0 +1,7 @@
+from enum import Enum
+
+
+class DecayType(Enum):
+    LINEAR_DECAY = "LINEAR_DECAY"
+    EXPONENTIAL_DECAY = "EXPONENTIAL_DECAY"
+    QUADRATIC_DECAY = "QUADRATIC_DECAY"
